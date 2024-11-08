@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Detección de Malware en Android</title>
+    <style>
+        body { font-family: Arial, sans-serif; }
+        .container { width: 80%; margin: auto; }
+        h1 { color: #333; }
+        .metrics { margin-top: 20px; }
+    </style>
+</head>
+<body>
+    <div calss="container">
+        <h1>Detección de Malware en Android</h1>
+        <h2>Resultados de los Modelos</h2>
+        <div calss="metrics">
+            <p><strong>F1 Score (Validación):</strong> {{ f1_score_val }}</p>
+            <p><strong>MSE:</strong> {{ mse }}</p>
+            <p><strong>R² Score:</strong> {{ r2 }}</p>
+        </div>
+        <h2>Gráfico de Comparación de Valores Reales vs Predichos</h2>
+        <img src="{{ url_for('grafico_dispersion') }}" alt="Gráfico de Dispersión">
+    </div>
+</body>
+</html>
